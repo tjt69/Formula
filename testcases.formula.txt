@@ -1,0 +1,66 @@
+Test cases formula
+
+input:0
+
+Expected output: (1+x)^0 = 1
+Time Required = 19.000000 microseconds
+
+Actual output:(1+x)^0 = 1
+Time Required = 19.000000 microseconds
+
+
+input:1
+
+Expected output:(1+x)^1 = 1 + 1*x^1
+Time Required = 19.000000 microseconds
+
+Actual output:(1+x)^1 = 1 + 1*x^1
+Time Required = 19.000000 microseconds
+
+
+input:5
+
+Expected output:(1+x)^5 = 1 + 5*x^1 + 10*x^2 + 10*x^3 + 5*x^4 + 1*x^5
+Time Required = 20.000000 microseconds
+
+Actual output:(1+x)^5 = 1 + 5*x^1 + 10*x^2 + 10*x^3 + 5*x^4 + 1*x^5
+Time Required = 20.000000 microseconds
+
+
+input:17
+
+Expected output:(1+x)^17 = 1 + 17*x^1 + 136*x^2 + 680*x^3 + 2380*x^4 + 6188*x^5 + 12376*x^6 + 19448*x^7 + 24310*x^8 + 24310*x^9 + 19448*x^10 + 12376*x^11 + 6188*x^12 + 2380*x^13 + 680*x^14 + 136*x^15 + 17*x^16 + 1*x^17
+Time Required = 23.000000 microseconds
+
+Actual output:(1+x)^17 = 1 + 17*x^1 + 136*x^2 + 680*x^3 + 2380*x^4 + 6188*x^5 + 12376*x^6 + 19448*x^7 + 24310*x^8 + 24310*x^9 + 19448*x^10 + 12376*x^11 + 6188*x^12 + 2380*x^13 + 680*x^14 + 136*x^15 + 17*x^16 + 1*x^17
+Time Required = 23.000000 microseconds
+
+
+input:18
+
+Expected output:(1+x)^18 = 1 + 18*x^1 + 153*x^2 + 816*x^3 + 3060*x^4 + 8568*x^5 + 18564*x^6 + 31824*x^7 + 43758*x^8 + 0*x^9
+Error: Overflow, Number is too large
+
+Actual output:(1+x)^18 = 1 + 18*x^1 + 153*x^2 + 816*x^3 + 3060*x^4 + 8568*x^5 + 18564*x^6 + 31824*x^7 + 43758*x^8 + 0*x^9
+Error: Overflow, Number is too large
+
+
+input:-h
+
+Expected output:Usage: formula <positive integer>
+
+Actual output:Usage: formula <positive integer>
+
+
+input:a
+
+Expected output:Error: Must Be Positive Integer
+
+Actual output:Error: Must Be Positive Integer
+
+
+input:-3
+
+Expected output:Error: Must Be Positive Integer
+
+Actual output:Error: Must Be Positive Integer
